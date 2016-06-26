@@ -1,11 +1,11 @@
 {
-  "name": "rx-github",
-  "description": "rx-github",
-  "version": "1.0.1",
+  "name": "rx-twitch",
+  "description": "rx-twitch",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yongjhih/rx-github.git"
+    "url": "https://github.com/yongjhih/rx-twitch.git"
   },
   "keywords": [
     "github",
@@ -14,9 +14,9 @@
   "author": "Andrew Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yongjhih/rx-github/issues"
+    "url": "https://github.com/yongjhih/rx-twitch/issues"
   },
-  "homepage": "https://github.com/yongjhih/rx-github",
+  "homepage": "https://github.com/yongjhih/rx-twitch",
   "devDependencies": {
     "chai": "1.10.0",
     "jshint": "2.8.0",
@@ -31,7 +31,6 @@
   },
   "scripts": {
     "start": "node index.js",
-    "repos": "node repos.js",
     "test": "mocha test/test.js",
     "report": "istanbul cover _mocha -- -R spec test/test.js",
     "coverage": "istanbul cover _mocha --report lcovonly -- -R spec test/test.js && cat ./coverage/lcov.info | coveralls"
