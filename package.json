@@ -1,0 +1,43 @@
+{
+  "name": "rx-github",
+  "description": "rx-github",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yongjhih/rx-github.git"
+  },
+  "keywords": [
+    "github",
+    "rx"
+  ],
+  "author": "Andrew Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yongjhih/rx-github/issues"
+  },
+  "homepage": "https://github.com/yongjhih/rx-github",
+  "devDependencies": {
+    "chai": "1.10.0",
+    "jshint": "2.8.0",
+    "mocha": "2.1.0",
+    "nock": "^0.56.0",
+    "lintspaces-cli": "^0.1.1",
+    "npm-prepublish": "^1.0.2",
+    "coveralls": "^2.11.2",
+    "isomorphic-fetch": "",
+    "es6-promise": "",
+    "rx": ""
+  },
+  "scripts": {
+    "start": "node index.js",
+    "repos": "node repos.js",
+    "test": "mocha test/test.js",
+    "report": "istanbul cover _mocha -- -R spec test/test.js",
+    "coverage": "istanbul cover _mocha --report lcovonly -- -R spec test/test.js && cat ./coverage/lcov.info | coveralls"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=4.3"
+  }
+}
