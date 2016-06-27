@@ -24,5 +24,19 @@ describe('rx-twitch', function() {
       console.log(e);
     });
   });
+
+  it('.Fetch() should be least 1 follower', function () {
+    nock('//api.twitch.tv')
+      .get('/kraken/channels/yongjhih/follows')
+      .replyWithFile(200, __dirname + '/yongjhih-follows.json');
+
+    RxTwitch.Fetch('//api.twitch.tv/kraken/channels/yongjhih/follows').subscribe(function (it) {
+      console.log(it.user.name);
+      expect(it.user.name).to.be.eql('e4e2e7343');
+    }, function (e) {
+      console.log(e);
+    });
+  });
 });
+
 /* vim: set sw=2: */

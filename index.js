@@ -12,7 +12,7 @@ RxTwitch.Fetch = fetch;
 function fetch(url, options) {
   return Rx.Observable.fromPromise(Fetch(url)).flatMap(function (response) {
     return Rx.Observable.concat(Rx.Observable.fromPromise(response.json()), (response.json()._links && response.json()._links.next && response.json()._cursor)
-        ? fetch(response.json()._links.next) : Rx.Observable.empty());
+        ? fetch(response.json()._links.next, options) : Rx.Observable.empty());
   });
 }
 
