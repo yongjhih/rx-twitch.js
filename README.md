@@ -5,7 +5,7 @@
 <!--[![coverage status][coveralls-image]][coveralls-url]-->
 
 [npm-image]: https://img.shields.io/npm/v/rx-twitch.js.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/rx-twitch.js
+[npm-url]: https://www.npmjs.com/package/rx-twitch
 [travis-image]: https://img.shields.io/travis/yongjhih/rx-twitch.js.svg?style=flat-square
 [travis-url]: https://travis-ci.org/yongjhih/rx-twitch.js
 [coveralls-image]: https://img.shields.io/coveralls/yongjhih/rx-twitch.js.svg?style=flat-square
