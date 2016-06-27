@@ -11,7 +11,7 @@
 [coveralls-image]: https://img.shields.io/coveralls/yongjhih/rx-twitch.js.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/yongjhih/rx-twitch.js
 
-<!--![](art/rx-twitch.png)-->
+![](art/rx-twitch.png)
 
 ## Usage
 
