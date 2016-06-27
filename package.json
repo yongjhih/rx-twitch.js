@@ -1,11 +1,11 @@
 {
   "name": "rx-twitch",
   "description": "rx-twitch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yongjhih/rx-twitch.git"
+    "url": "https://github.com/yongjhih/rx-twitch.js.git"
   },
   "keywords": [
     "twitch",
@@ -14,9 +14,9 @@
   "author": "Andrew Chen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yongjhih/rx-twitch/issues"
+    "url": "https://github.com/yongjhih/rx-twitch.js/issues"
   },
-  "homepage": "https://github.com/yongjhih/rx-twitch",
+  "homepage": "https://github.com/yongjhih/rx-twitch.js",
   "devDependencies": {
     "chai": "1.10.0",
     "jshint": "2.8.0",
