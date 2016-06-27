@@ -4,7 +4,7 @@
 [![build status][travis-image]][travis-url]
 <!--[![coverage status][coveralls-image]][coveralls-url]-->
 
-[npm-image]: https://img.shields.io/npm/v/rx-twitch.js.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/rx-twitch.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/rx-twitch
 [travis-image]: https://img.shields.io/travis/yongjhih/rx-twitch.js.svg?style=flat-square
 [travis-url]: https://travis-ci.org/yongjhih/rx-twitch.js
