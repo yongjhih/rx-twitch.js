@@ -2,5 +2,5 @@ sudo: false
 language: node_js
 node_js:
     - '4'
-#before_install: npm install -g npm
 script: npm test
+after_script: NODE_ENV=test npm run-script coveralls
