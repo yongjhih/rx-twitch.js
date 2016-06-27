@@ -24,7 +24,7 @@ RxTwitch.Fetch('https://api.twitch.tv/kraken/channels/yongjhih/follows').subscri
 
 ```js
 var RxTwitch = require('rx-twitch');
-twitch.follows('yongjhih').subscribe(function (follow) {
+RxTwitch.Follows('yongjhih').subscribe(function (follow) {
   console.log(follow.user.name);
 });
 ```
