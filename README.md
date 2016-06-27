@@ -29,23 +29,6 @@ twitch.follows('yongjhih').subscribe(function (follow) {
 });
 ```
 
-## TODO
-
-```js
-var RxTwitch = require('rx-twitch');
-var twitch = new RxTwitch({ token: token });
-twitch.repos('yongjhih');
-```
-
-```js
-var RxTwitch = require('rx-twitch');
-var twitch = new RxTwitch({ username: USERNAME, password: PASSWORD });
-
-twitch.follows('yongjhih').subscribe(function (follow) {
-  console.log(follow.user.name);
-});
-```
-
 ## Installation
 
 ```sh
