@@ -2,7 +2,7 @@
 
 [![npm version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
-<!--[![coverage status][coveralls-image]][coveralls-url]-->
+[![coverage status][coveralls-image]][coveralls-url]
 
 [npm-image]: https://img.shields.io/npm/v/rx-twitch.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/rx-twitch
