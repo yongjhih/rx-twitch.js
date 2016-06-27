@@ -8,7 +8,21 @@ describe('rx-twitch', function() {
     expect(RxTwitch).to.be.a('function');
   });
 
-  it('should be .Repos defined', function() {
+  it('should be .Fetch defined', function () {
     expect(RxTwitch.Fetch).to.be.a('function');
   });
+
+  it('.Follows() should be least 1 follower', function () {
+    nock('//api.twitch.tv')
+      .get('/kraken/channels/yongjhih/follows')
+      .replyWithFile(200, __dirname + '/yongjhih-follows.json');
+
+    RxTwitch.Follows('yongjhih').subscribe(function (it) {
+      console.log(it.user.name);
+      expect(it.user.name).to.be.eql('e4e2e7343');
+    }, function (e) {
+      console.log(e);
+    });
+  });
 });
+/* vim: set sw=2: */
