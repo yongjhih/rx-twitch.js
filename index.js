@@ -17,12 +17,11 @@ function fetch(url, options) {
 }
 
 RxTwitch.Follows = follows;
-function follows(user, baseUrl) {
-  if (!baseUrl) baseUrl = 'https://api.twitch.tv';
+function follows(user, options) {
+  var baseUrl = 'https://api.twitch.tv';
 
   var url = baseUrl + `/kraken/channels/${user}/follows`;
-  console.log(url);
-  return fetch(url).flatMap(function (json) { return Rx.Observable.from(json.follows); });
+  return fetch(url, options).flatMap(function (json) { return Rx.Observable.from(json.follows); });
 }
 
 /* vim: set sw=2: */
